@@ -1,9 +1,6 @@
 <DOCTYPE! html>
 <html>
 
-
-
-
 <head>
   <title>Security Definitions Glossary </title>
   <meta charset="utf-8">
@@ -13,42 +10,56 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <!--Personal Styles-->
   <link rel="stylesheet" href="glossaryStyles.css">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!--Google font for the title-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 
 
 
 <body>
+  <div id="overallContainer;">
+
+  <!--Title Container-->
   <div class="container">
     <div class="row">
       <div class="col-lg-offset-4 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6">
         <h1>Security Definitions</h1>
 
       </div>
+    </div>
 
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hidden-sm hidden-xs">
-        <hr>
-        <hr class="smallHr" style="margin-left: 50%;">
-      </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 hidden-sm hidden-xs">
-        <div id="circle">
+      <div class="row" style="margin-bottom: 5px;">
+
+
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hidden-sm hidden-xs">
+          <hr style="margin-top: 1rem;">
+          <hr style="margin-left: 49%; margin-top: -1rem; width: 50%;">
+          <hr style="margin-left: 74%; margin-top: -1rem; width: 25%; ">
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 hidden-sm hidden-xs">
+          <img src="star.png" alt="Star Logo" class="img-responsive img-circle">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-sm hidden-xs">
+          <hr style="margin-top: 1rem">
+          <hr style="margin-right: 50%; margin-top: -1rem; width: 50%;">
+          <hr style="margin-right: 74%; margin-top: -1rem; width: 25%; ">
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-sm hidden-xs">
-        <hr>
-        <hr class="smallHr" style="margin-right: 50%;">
-      </div>
-
     </div>
+
   </div>
 
+  <!--Main navigation container-->
   <div class="container" id="mainNavigation">
     <div class="row">
       <div class="col-lg-12">
-        <nav aria-label="Page navigation">
+        <nav aria-label="Page navigation" id="pageNavigation">
           <ul class="pagination">
             <li><a onclick="myfunction('A')">A</a></li>
-            <li><a>B</a></li>
+            <li class="disabled"><a>B</a></li>
             <li><a onclick="myfunction('C')">C</a></li>
             <li><a onclick="myfunction('D')">D</a></li>
             <li><a onclick="myfunction('E')">E</a></li>
@@ -56,43 +67,51 @@
             <li><a onclick="myfunction('G')">G</a></li>
             <li><a onclick="myfunction('H')">H</a></li>
             <li><a onclick="myfunction('I')">I</a></li>
-            <li><a href="#">J</a></li>
-            <li><a href="#">K</a></li>
+            <li class="disabled"><a>J</a></li>
+            <li class="disabled"><a>K</a></li>
             <li><a onclick="myfunction('L')">L</a></li>
             <li><a onclick="myfunction('M')">M</a></li>
             <li><a onclick="myfunction('N')">N</a></li>
             <li><a onclick="myfunction('O')">O</a></li>
             <li><a onclick="myfunction('P')">P</a></li>
-            <li><a href="#">Q</a></li>
+            <li class="disabled"><a>Q</a></li>
             <li><a onclick="myfunction('R')">R</a></li>
             <li><a onclick="myfunction('S')">S</a></li>
-            <li><a href="#">T</a></li>
-            <li><a href="#">U</a></li>
-            <li><a href="#">V</a></li>
-            <li><a href="#">W</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">Y</a></li>
-            <li><a href="#">Z</a></li>
+            <li><a onclick="myfunction('T')">T</a></li>
+            <li><a onclick="myfunction('U')">U</a></li>
+            <li><a onclick="myfunction('V')">V</a></li>
+            <li class="disabled"><a>W</a></li>
+            <li class="disabled"><a>X</a></li>
+            <li class="disabled"><a>Y</a></li>
+            <li class="disabled"><a>Z</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
 
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
+  <!--Main content container, content changes using "myfunction()" from the glossary.js file-->
+  <div class="container" id="mainContainer">
+    <div class="row" id="contentMainRow">
+      <div class="col-lg-6 col-lg-offset-3">
         <div class="panel-group" id="mainContent" role="tablist" aria-multiselectable="true">
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" >
+      <ul class="nav nav-tabs">
+        <li class="navbar-right "><a href="https://ctcmmccoalition.com/" class="navbar-link" target="_blank">CT CMMC Coalition</a></li>
+      </ul>
+</nav>
 
 
   <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!--Personal function, contains "myfunction() which changes content in the main container based on the button pressed"-->
   <script src="glossaryScript.js"></script>
 </body>
 

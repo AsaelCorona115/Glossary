@@ -1,3 +1,6 @@
+//The following function substitutes the collapsible elements in the mainContent container
+//It is ordained alphabetically so its easier to find anything
+
 function myfunction(letter_index)
 {
   if(letter_index == 'A'){
@@ -1408,6 +1411,314 @@ function myfunction(letter_index)
       </div>
     </div>
 
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixty">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixty" aria-expanded="false" aria-controls="collapseSixty">
+            Supervisory Control and Data Acquisition (SCADA)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixty">
+        <div class="panel-body">
+        A generic name for a computerized system that is capable of gathering and processing data and applying operational controls to geographically dispersed assets over long distances.
+          <br>References:
+          <a href="https://www.acq.osd.mil/cmmc/draft.html" target="_blank">
+            CMMC Assessment Guide</a> and
+
+            <a href="https://niccs.cisa.gov/about-niccs/cybersecurity-glossary#S" target="_blank">
+              CISA.gov</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtyOne">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtyOne" aria-expanded="false" aria-controls="collapseSixtyOne">
+            Supplier Performance Risk System (SPRS)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtyOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtyOne">
+        <div class="panel-body">
+            Supplier Performance Risk System (SPRS) is a web-enabled enterprise application accessed through the Naval Sea Logistics Center Portsmouth web applications at https://www.sprs.csd.disa.mil/.
+            SPRS gathers, processes, and displays data about the performance of suppliers. SPRS is the Department of Defense’s single, authorized application to retrieve suppliers’ performance information.
+            SPRS notifies procurement specialists of Product Service Code (FSC/PSC) specific risks and risk mitigations. SPRS’s Supplier Risk Score provides procurement specialists with a composite score that
+            considers each supplier’s past performance in the areas of product delivery and quality. The quality and delivery classifications identified for a supplier in SPRS will be used by the contracting
+            officer to evaluate a supplier’s past performance in conjunction with the supplier’s references (if requested) and other provisions of the solicitation under the past performance evaluation factor.
+            Contractors (vendors) may access their own company contract information in SPRS.
+          <br>References:
+
+            <a href="https://www.sprs.csd.disa.mil/pdf/SPRS_Awardee.pdf" target="_blank">
+              SPRS</a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtyTwo">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtyTwo" aria-expanded="false" aria-controls="collapseSixtyTwo">
+            System and Communications Protection (SC)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtyTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtyTwo">
+        <div class="panel-body">
+          The characterization of information or an information system based on an assessment of the potential impact that a loss of confidentiality, integrity, or availability of such information or information
+          system would have on organizational operations, organizational assets, individuals, other organizations, and the Nation.
+          <br>References:
+          <a href="https://www.acq.osd.mil/cmmc/draft.html" target="_blank">
+                  CMMC Assessment Guide</a> and
+            <a href="https://csrc.nist.gov/glossary/term/SC" target="_blank">
+              NIST.gov</a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtyThree">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtyThree" aria-expanded="false" aria-controls="collapseSixtyThree">
+            System and Information Integrity (SI)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtyThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtyThree">
+        <div class="panel-body">
+        The attribute of an information system when it performs its intended function in an unimpaired manner, free from deliberate or inadvertent unauthorized manipulation of the system.
+          <br>References:
+          <a href="https://www.acq.osd.mil/cmmc/draft.html" target="_blank">
+                  CMMC Assessment Guide</a> and
+            <a href="https://niccs.cisa.gov/about-niccs/cybersecurity-glossary#S" target="_blank">
+              CISA.gov</a>
+
+        </div>
+      </div>
+    </div>
+
     `
   }
+  if (letter_index == 'T'){
+    document.getElementById("mainContent").innerHTML =
+    `
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtyFour">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtyFour" aria-expanded="false" aria-controls="collapseSixtyFour">
+            Transport Layer Security (TLS)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtyFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtyFour">
+        <div class="panel-body">
+          Transport Layer Security (TLS) is an example of a cryptographic protocol that provides end-to-end communications security over networks and is used for Internet communications and online transactions.
+          TLS is a cryptographic protocol that provides end-to-end security of data sent between applications over the Internet. It is mostly familiar to users through its use in secure web browsing, and in
+          particular the padlock icon that appears in web browsers when a secure session is established. However, it can and indeed should also be used for other applications such as e-mail, file transfers,
+          video/audio conferencing, instant messaging and voice-over-IP, as well as Internet services such as DNS (Domain Name Service) and NTP(Network Time Protocol).
+          <br>References:
+            <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf" target="_blank">
+              NIST.gov</a> and
+            <a href="https://www.internetsociety.org/deploy360/tls/basics/" target="_blank">
+              Internet Society</a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtyFive">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtyFive" aria-expanded="false" aria-controls="collapseSixtyFive">
+            Tunnel
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtyFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtyFive">
+        <div class="panel-body">
+        In the movement of data from one network to another, tunnel mode encrypts the whole packet and is used for the establishment of site-to-site VPN tunnels, when securing
+        communication between VPN gateway devices. Tunnel mode provides security for the entire original IP packet, protecting the headers and payload.
+          <br>References:
+            <a href="http://www.internet-computer-security.com/VPN-Guide/Tunnel-mode.html" target="_blank">
+              Internet Computer Security.com</a>
+
+
+        </div>
+      </div>
+    </div>
+
+    `
+  }
+  if (letter_index == 'U'){
+    document.getElementById("mainContent").innerHTML =
+    `
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtySix">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtySix" aria-expanded="false" aria-controls="collapseSixtySix">
+            Universal Serial Bus (USB)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtySix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtySix">
+        <div class="panel-body">
+          USB port allows for the exfiltration of information from systems and the introduction of malicious codes.
+          <br>
+          USB removable media may be used to transfer information, files, patches and updates.In the past, USB devices were used to attack systems directly using the USB interface as a powerful attack vector
+          e.g. Industroyer strain.
+
+          <br>References:
+          <a href="https://www.acq.osd.mil/cmmc/draft.html" target="_blank">
+            CMMC Assessment Guide</a> and
+            <a href="https://www.tripwire.com/state-of-security/ics-security/usb-threats-cybersecurity-industrial/" target="_blank">
+              Tripwire.com</a>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtySeven">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtySeven" aria-expanded="false" aria-controls="collapseSixtySeven">
+            Unix-to-Unix Encode (UUENCODE)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtySeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtySeven">
+        <div class="panel-body">
+          Unix-to-Unix encode is a utility to encode binary data into ASCII text characters. It is used to encode binary data, allowing it to be exchanged through the uucp mail system. Unix-to-Unix encode is
+           also known as UUENCODE.
+          <br>References:
+          <a href="https://www.acq.osd.mil/cmmc/draft.html" target="_blank">
+            CMMC Assessment Guide</a>
+
+
+        </div>
+      </div>
+    </div>
+
+    `
+  }
+  if (letter_index == 'V'){
+    document.getElementById("mainContent").innerHTML =
+    `
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtyEighth">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtyEighth" aria-expanded="false" aria-controls="collapseSixtyEighth">
+            Virtual Local Area Network (VLAN)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtyEighth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtyEighth">
+        <div class="panel-body">
+          A virtual local area network is a logical subnetwork that groups a collection of devices from different physical LANs. Large business computer networks often set up VLANs to re-partition a network for
+          improved traffic management. Several kinds of physical networks support virtual LANs, including Ethernet and Wi-Fi. <br>
+          When set up correctly, virtual LANs improve the performance of busy networks. VLANs can group client devices that communicate frequently with each other. The traffic among devices split across two or
+          more physical networks is usually handled by a network's core routers. With a VLAN, that traffic is handled more efficiently by network switches.
+
+          <br>References:
+          <a href="https://www.acq.osd.mil/cmmc/draft.html" target="_blank">
+            CMMC Assessment Guide</a> and
+          <a href="https://www.lifewire.com/virtual-local-area-network-817357" target="_blank">
+              lifewire.com</a>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSixtyNine">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSixtyNine" aria-expanded="false" aria-controls="collapseSixtyNine">
+            Virtual Machine (VM)
+
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSixtyNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixtyNine">
+        <div class="panel-body">
+          A virtual machine is a computer file, typically called an image, which behaves like an actual computer. In other words, creating a computer within a computer. It runs in a window, much like any other
+          programme, giving the end user the same experience on a virtual machine as they would have on the host operating system itself. The virtual machine is sandboxed from the rest of the system, meaning that
+          the software inside a virtual machine cannot escape or tamper with the computer itself. This produces an ideal environment for testing other operating systems including beta releases, accessing
+          virus-infected data, creating operating system backups and running software or applications on operating systems for which they were not originally intended. <br>
+
+          Multiple virtual machines can run simultaneously on the same physical computer. For servers, the multiple operating systems run side-by-side with a piece of software called a hypervisor to manage them,
+          while desktop computers typically employ one operating system to run the other operating systems within its programme windows. Each virtual machine provides its own virtual hardware, including CPUs,
+          memory, hard drives, network interfaces and other devices. The virtual hardware is then mapped to the real hardware on the physical machine which saves costs by reducing the need for physical hardware
+          systems along with the associated maintenance costs that go with it, plus reduces power and cooling demand.
+
+          <br>References:
+
+          <a href="https://azure.microsoft.com/en-in/overview/what-is-a-virtual-machine/" target="_blank">
+              Microsoft Azure</a>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSeventy">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSeventy" aria-expanded="false" aria-controls="collapseSeventy">
+            Virtual Private Network (VPN)
+
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSeventy" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventy">
+        <div class="panel-body">
+          A virtual private network (VPN) can be used to securely provision a split tunnel. A securely provisioned VPN includes locking connectivity to exclusive, managed, and named environments, or to a
+          specific set of pre approved addresses, without user control
+          <br>References:
+
+          <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf" target="_blank">
+              NIST.gov</a>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSeventyOne">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#mainContent" href="#collapseSeventyOne" aria-expanded="false" aria-controls="collapseSeventyOne">
+            Voice over Internet Protocol (VoIP)
+          </a>
+        </h4>
+      </div>
+      <div id="collapseSeventyOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventyOne">
+        <div class="panel-body">
+          A term used to describe the transmission of packetized voice using the internet protocol (IP) and consists of both signaling and media protocols.
+          <br>References:
+          <a href="https://www.acq.osd.mil/cmmc/draft.html" target="_blank">
+            CMMC Assessment Guide</a>
+          <a href="https://csrc.nist.gov/glossary/term/voice_over_internet_protocol" target="_blank">
+              NIST.gov</a>
+
+
+        </div>
+      </div>
+    </div>
+
+    `
+  }
+
+
 }
